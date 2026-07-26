@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Flappy 😂</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="gameContainer">
+
+        <!-- Score -->
+        <div id="score">0</div>
+
+        <!-- High Score -->
+        <div id="highScore">
+            High Score : <span id="bestScore">0</span>
+        </div>
+
+        <!-- Canvas -->
+        <canvas id="gameCanvas" width="400" height="700"></canvas>
+
+        <!-- Start Screen -->
+        <div id="startScreen" class="overlay">
+
+            <h1>Funny Flappy </h1>
+
+            <div class="birdEmoji">🐤</div>
+
+            <p>Tap Anywhere To Start</p>
+
+            <button id="startBtn">
+                Start Game
+            </button>
+
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="gameOverScreen" class="overlay hidden">
+
+            <h1>🤣 Game Over</h1>
+
+            <h2 id="funnyMessage">
+                Khelna nahi aata hai kya?
+            </h2>
+
+            <p>
+                Score :
+                <span id="finalScore">0</span>
+            </p>
+
+            <p>
+                Best :
+                <span id="finalBest">0</span>
+            </p>
+
+            <button id="restartBtn">
+                🔄 Play Again
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Sounds -->
+
+    <audio id="jumpSound" src="assets/jump.mp3"></audio>
+
+    <audio id="scoreSound" src="assets/score.mp3"></audio>
+
+    <audio id="shabaashSound" src="assets/shabaash.mp3"></audio>
+
+    <audio id="gameOverSound" src="assets/gameover.mp3"></audio>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
