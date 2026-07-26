@@ -44,8 +44,10 @@ bestScoreElement.innerText = bestScore;
 let gameStarted = false;
 let gameOver = false;
 
-let gravity = 0.28;
-let jumpPower = -7.2;
+// let gravity = 0.28;
+// let jumpPower = -7.2;
+let gravity = 0.55;
+let jumpPower = -9;
 
 let pipes = [];
 
